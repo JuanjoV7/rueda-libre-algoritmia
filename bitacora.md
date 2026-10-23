@@ -21,3 +21,6 @@ el estado de la bicicleta, pide su documento para alquilar y le realiza el cobro
 Entrega la bicicleta con el casco y el candado, el cliente se retira con su producto y finaliza el proceso.
 
 6-
+
+
+
