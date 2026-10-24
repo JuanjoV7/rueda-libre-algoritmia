@@ -11,6 +11,10 @@ Algoritmo cuenta_grupo
 	Definir CostoAlquiler Como Real
 	Definir SubTotal Como Real
 	Definir Anticipo Como Real
+	Definir Aporte Como Real
+	Definir Total Como Real
+	Definir ValorPersona Como Real
+	Definir TotalTotal Como Real
 	
 	ValorUrbana = 10000
 	
@@ -51,5 +55,18 @@ Algoritmo cuenta_grupo
 	anticipo = (SubTotal * 0.30)
 	Escribir "El anticipo es de: " anticipo
 	
+	Aporte = SubTotal*0.10
+	Escribir "Aporte voluntario del 10%, aplicando: ", Aporte 
 	
+	Total = SubTotal+Aporte
+	Escribir "El total por el recorrido es: ", Total
+	
+	
+	ValorPersona = redon(Total / CantidadPersonas)
+	Escribir "El valor a dar por ", CantidadPersonas, " personas es de: ", ValorPersona
+	
+	Escribir "-------------------------------------"
+	Escribir "El total de la cuenta, incluyendo aporte, alquiler y recorrido" 
+	TotalTotal = redon(Total + ValorAlquiler)
+	Escribir "$" TotalTotal
 FinAlgoritmo
